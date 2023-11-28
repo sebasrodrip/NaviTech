@@ -16,31 +16,31 @@
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
-    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+    <link rel="apple-touch-icon" href="~/img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="~/img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="~/img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="~/img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="~/img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="~/img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="~/img/icon152.png" sizes="152x152">
     <!-- END Icons -->
     <!-- Stylesheets -->
     <!-- Bootstrap is included in its original form, unaltered -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
 
     <!-- Related styles of various javascript plugins -->
-    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="~/css/plugins.css">
 
     <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="~/css/main.css">
 
     <!-- Load a specific file here from css/themes/ folder to alter the default theme of the template -->
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
-    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="~/css/themes.css">
     <!-- END Stylesheets -->
     <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
-    <script src="js/vendor/modernizr-respond.min.js"></script>
+    <script src="~/js/vendor/modernizr-respond.min.js"></script>
 </head>
 
 <!-- Add the class .fixed to <body> for a fixed layout on large resolutions (min: 1200px) -->
@@ -65,7 +65,7 @@
             </ul>
             <!-- END Mobile Navigation -->
             <!-- Logo -->
-            <a href="index.html" class="navbar-brand"><img src="img/template/logo.png" alt="logo"></a>
+            <a href="index.html" class="navbar-brand"><img src="~/img/template/logo.png" alt="logo"></a>
 
             <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
             <div id="loading" class="pull-left"><i class="fa fa-certificate fa-spin"></i></div>
@@ -75,7 +75,7 @@
             <ul id="widgets" class="navbar-nav-custom pull-right">
                 <!-- User Picture -->
                 <li class="dropdown pull-right dropdown-user">
-                    <a><img src="img/template/avatar.png" alt="avatar"></a>
+                    <a><img src="~/img/template/avatar.png" alt="avatar"></a>
                 </li>
                 <!-- END User Menu -->
             </ul>
@@ -98,16 +98,16 @@
                 <nav id="primary-nav">
                     <ul>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Dashboard</a>
+                            <a class ="active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-fire"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-calendar"></i>Calendario</a>
+                            <a class="active" asp-area="" asp-controller="Home" asp-action="Calendario"><i class="fa fa-calendar"></i>Calendario</a>
                         </li>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-file-o"></i>Cotizaciones</a>
+                            <a class="active" asp-area="" asp-controller="Home" asp-action="Cotizaciones"><i class="fa fa-file-o"></i>Cotizaciones</a>
                         </li>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-list"></i>Facturación</a>
+                            <a class="active" asp-area="" asp-controller="Home" asp-action="Facturas"><i class="fa fa-list"></i>Facturación</a>
                         </li>
                     </ul>
                 </nav>
@@ -128,11 +128,11 @@
     <!--[if lte IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
     <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
+    <script>!window.jQuery && document.write(decodeURI('%3Cscript src="~/js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
     <!-- Bootstrap.js -->
-    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="~/js/vendor/bootstrap.min.js"></script>
     <!-- Jquery plugins and custom javascript code -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/main.js"></script>
 </body>
 </html>

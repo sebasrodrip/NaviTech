@@ -18,7 +18,17 @@ namespace FrontEnd.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Cotizaciones()
+        {
+            return View();
+        }
+
+        public IActionResult Calendario()
+        {
+            return View();
+        }
+
+        public IActionResult Facturas()
         {
             return View();
         }

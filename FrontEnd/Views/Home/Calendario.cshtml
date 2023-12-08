@@ -2,11 +2,20 @@
     ViewData["Title"] = "Calendario";
 }
 <div id="page-content">
-    <!-- FullCalendar -->
-    <h3 class="page-header page-header-top">FullCalendar <small>With Google Calendar support!</small></h3>
-
-    <div id="example-fullcalendar"></div>
-    <!-- END FullCalendar -->
+    <!-- FullCalendar (Drop Events) -->
+    <h3 class="page-header">Drop Events <small>Agenda</small></h3>
+    <div class="row">
+        <div class="col-md-2">
+            <div id="fc-external-events">
+                <h5>Draggable Events</h5>
+                <div class="fc-external-event">Ocupado</div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div id="example-fullcalendar2"></div>
+        </div>
+    </div>
+    <!-- END FullCalendar (Drop Events) -->
 </div>
 
 <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
